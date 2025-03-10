@@ -44,8 +44,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             let editImg = document.createElement('img');
             editImg.src = '/images/edit.png'; 
             editImg.alt = 'Edit';
-            editImg.style.cursor = 'pointer';
-            editImg.style.height = '34px'
+            editImg.className = 'imgBtn'
             editImg.addEventListener('click', () => {
                 taskInput.value = item;
                 div.style.backgroundColor = "#f79e05"
@@ -67,8 +66,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             let deleteImg = document.createElement('img');
             deleteImg.src = './images/dustbin.png';
             deleteImg.alt = 'Delete';
-            deleteImg.style.height = '34px'
-            deleteImg.style.cursor = 'pointer';
+            deleteImg.className = 'imgBtn'
             deleteImg.addEventListener('click', () => {
                 list.splice(i, 1);
                 createList();
@@ -79,8 +77,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
             let doneImg = document.createElement('img');
             doneImg.src = '/images/check.png';
             doneImg.alt = 'Done';
-            doneImg.style.height = '30px'
-            doneImg.style.cursor = 'pointer';
+            doneImg.className = 'imgBtn'
             doneImg.addEventListener('click', () => {
                 list.splice(i, 1);
                 done.push(item);
